@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.fragment.Home0Fragment">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_solid_white_bottom_20"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_charge_coin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height"
+        android:gravity="center"
+        android:padding="@dimen/size_8"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="@dimen/bar_height"
+        android:layout_height="@dimen/bar_height"
+        android:layout_marginLeft="@dimen/size_8"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+    <ImageView
+        android:id="@+id/iv_notice"
+        android:layout_width="@dimen/bar_height"
+        android:layout_height="@dimen/bar_height"
+        android:layout_marginRight="@dimen/size_8"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_notice"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintRight_toRightOf="@+id/tv_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_block_4"
+        android:drawableLeft="@drawable/ic_notification"
+        android:drawableRight="@drawable/ic_close"
+        android:drawablePadding="@dimen/size_16"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="@dimen/size_16"
+        android:paddingTop="@dimen/size_8"
+        android:paddingRight="@dimen/size_16"
+        android:paddingBottom="@dimen/size_8"
+        android:singleLine="true"
+        android:textColor="@color/text_color_3"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/convenient_banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        app:autoTurningTime="3000"
+        app:canLoop="true"
+        app:layout_constraintDimensionRatio="700:400"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notification" />
+
+    <TextView
+        android:id="@+id/tv_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8"
+        android:drawableTop="@drawable/ic_scan"
+        android:drawablePadding="@dimen/size_8"
+        android:ems="6"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_8"
+        android:paddingBottom="@dimen/size_8"
+        android:text="@string/scan"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/convenient_banner"
+        app:layout_constraintRight_toLeftOf="@+id/tv_charge_coin"
+        app:layout_constraintTop_toBottomOf="@+id/convenient_banner" />
+
+    <TextView
+        android:id="@+id/tv_charge_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_charge_coin"
+        android:drawablePadding="@dimen/size_8"
+        android:ems="4"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_8"
+        android:paddingBottom="@dimen/size_8"
+        android:text="@string/charge_coin"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="@+id/convenient_banner"
+        app:layout_constraintRight_toLeftOf="@+id/tv_withdraw_coin"
+        app:layout_constraintTop_toBottomOf="@+id/convenient_banner" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_withdraw_coin"
+        android:drawablePadding="@dimen/size_8"
+        android:ems="4"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_8"
+        android:paddingBottom="@dimen/size_8"
+        android:text="@string/withdraw_coin"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_charge_coin"
+        app:layout_constraintLeft_toRightOf="@+id/tv_charge_coin"
+        app:layout_constraintRight_toLeftOf="@+id/tv_collect_coin" />
+
+    <TextView
+        android:id="@+id/tv_collect_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_collect_coin"
+        android:drawablePadding="@dimen/size_8"
+        android:ems="4"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_8"
+        android:paddingBottom="@dimen/size_8"
+        android:text="@string/collect_coin"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_charge_coin"
+        app:layout_constraintLeft_toRightOf="@+id/tv_withdraw_coin"
+        app:layout_constraintRight_toLeftOf="@+id/tv_transfer_coin" />
+
+    <TextView
+        android:id="@+id/tv_transfer_coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_transfer_coin"
+        android:drawablePadding="@dimen/size_8"
+        android:ems="4"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_8"
+        android:paddingBottom="@dimen/size_8"
+        android:text="@string/transfer_coin"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_charge_coin"
+        app:layout_constraintLeft_toRightOf="@+id/tv_collect_coin"
+        app:layout_constraintRight_toLeftOf="@+id/tv_mine_pool" />
+
+    <TextView
+        android:id="@+id/tv_mine_pool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_mine_pool"
+        android:drawablePadding="@dimen/size_8"
+        android:ems="4"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_8"
+        android:paddingBottom="@dimen/size_8"
+        android:text="@string/mine_pool"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_charge_coin"
+        app:layout_constraintLeft_toRightOf="@+id/tv_transfer_coin"
+        app:layout_constraintRight_toRightOf="@+id/convenient_banner" />
+
+    <TextView
+        android:id="@+id/tv_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_notice"
+        android:drawablePadding="@dimen/size_8"
+        android:ems="6"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_8"
+        android:paddingBottom="@dimen/size_8"
+        android:text="@string/notice"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_charge_coin"
+        app:layout_constraintLeft_toRightOf="@+id/tv_withdraw_coin"
+        app:layout_constraintRight_toRightOf="@+id/convenient_banner" />
+
+    <TextView
+        android:id="@+id/tv_mine_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_4"
+        android:drawableTop="@drawable/ic_mine_field"
+        android:drawablePadding="@dimen/size_8"
+        android:ems="6"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_8"
+        android:paddingBottom="@dimen/size_8"
+        android:text="@string/mine_field"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="@+id/convenient_banner"
+        app:layout_constraintRight_toLeftOf="@+id/tv_collect_coin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_charge_coin" />
+
+    <TextView
+        android:id="@+id/tv_my_assets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_my_assets"
+        android:drawablePadding="@dimen/size_8"
+        android:ems="6"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_8"
+        android:paddingBottom="@dimen/size_8"
+        android:text="@string/my_assets"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_mine_field"
+        app:layout_constraintLeft_toRightOf="@+id/tv_transfer_coin"
+        app:layout_constraintRight_toRightOf="@+id/convenient_banner" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_8"
+        android:layout_marginRight="@dimen/size_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mine_field"
+        app:srlAccentColor="@color/colorAccent"
+        app:srlPrimaryColor="@color/colorPrimary">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_12"
+                android:drawableLeft="@drawable/ic_market"
+                android:drawablePadding="@dimen/size_8"
+                android:text="@string/market"
+                android:textColor="@color/light_black1"
+                android:textSize="@dimen/font_16"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_currency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_4"
+                android:gravity="center"
+                android:paddingTop="@dimen/size_8"
+                android:paddingBottom="@dimen/size_8"
+                android:text="@string/currency"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/font_14"
+                android:visibility="gone"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/tv_price"
+                app:layout_constraintTop_toBottomOf="@+id/tv_market" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/size_8"
+                android:paddingBottom="@dimen/size_8"
+                android:text="@string/price"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/font_14"
+                android:visibility="gone"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_currency"
+                app:layout_constraintHorizontal_weight="4"
+                app:layout_constraintLeft_toRightOf="@+id/tv_currency"
+                app:layout_constraintRight_toLeftOf="@+id/tv_range" />
+
+            <TextView
+                android:id="@+id/tv_range"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/size_8"
+                android:paddingBottom="@dimen/size_8"
+                android:text="@string/range"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/font_14"
+                android:visibility="gone"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_currency"
+                app:layout_constraintHorizontal_weight="3"
+                app:layout_constraintLeft_toRightOf="@+id/tv_price"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                android:textColor="@color/light_black3"
+                android:textSize="@dimen/font_14"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_currency"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_currency" />
+        </android.support.constraint.ConstraintLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</android.support.constraint.ConstraintLayout>

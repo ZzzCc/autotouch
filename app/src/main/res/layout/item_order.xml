@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_solid_white_4"
+    android:paddingTop="@dimen/size_16"
+    android:paddingBottom="@dimen/size_16">
+
+    <TextView
+        android:id="@+id/tv_order_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_24"
+        android:layout_marginRight="@dimen/size_12"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_status"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_24"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_order_name"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/view_divider0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider"
+        android:layout_marginTop="@dimen/size_12"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_name" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_order_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view_divider0" />
+
+    <View
+        android:id="@+id/view_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@+id/rv_order_goods" />
+
+    <TextView
+        android:id="@+id/tv_goods_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goods_quantity"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_gtse"
+        app:layout_constraintRight_toLeftOf="@+id/tv_gtse" />
+
+    <TextView
+        android:id="@+id/tv_gtse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_24"
+        android:text="@string/gtse1"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_divider1" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_cancel_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_16"
+        android:paddingLeft="@dimen/size_12"
+        android:paddingTop="@dimen/size_4"
+        android:paddingRight="@dimen/size_12"
+        android:paddingBottom="@dimen/size_4"
+        android:text="@string/cancel_order"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_click_payment"
+        app:layout_constraintRight_toLeftOf="@+id/btn_click_payment"
+        app:qmui_borderColor="@color/light_black3"
+        app:qmui_borderWidth="@dimen/size_1"
+        app:qmui_radius="@dimen/size_4" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_click_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_16"
+        android:paddingLeft="@dimen/size_12"
+        android:paddingTop="@dimen/size_4"
+        android:paddingRight="@dimen/size_12"
+        android:paddingBottom="@dimen/size_4"
+        android:text="@string/click_payment"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gtse"
+        app:qmui_borderColor="@color/app_color"
+        app:qmui_borderWidth="@dimen/size_1"
+        app:qmui_radius="@dimen/size_4" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_to_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_16"
+        android:paddingLeft="@dimen/size_12"
+        android:paddingTop="@dimen/size_4"
+        android:paddingRight="@dimen/size_12"
+        android:paddingBottom="@dimen/size_4"
+        android:text="@string/to_bind"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/btn_one_bind"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gtse"
+        app:qmui_borderColor="@color/light_black3"
+        app:qmui_borderWidth="@dimen/size_1"
+        app:qmui_radius="@dimen/size_12" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_one_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_16"
+        android:paddingLeft="@dimen/size_12"
+        android:paddingTop="@dimen/size_4"
+        android:paddingRight="@dimen/size_12"
+        android:paddingBottom="@dimen/size_4"
+        android:text="@string/one_binding"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gtse"
+        app:qmui_borderColor="@color/app_color"
+        app:qmui_borderWidth="@dimen/size_1"
+        app:qmui_radius="@dimen/size_12" />
+</android.support.constraint.ConstraintLayout>

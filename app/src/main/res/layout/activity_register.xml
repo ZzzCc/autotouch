@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".ui.register.RegisterActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:drawableRight="@drawable/ic_arrow_right_white"
+        android:drawablePadding="@dimen/size_8"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_16"
+        android:paddingRight="@dimen/size_16"
+        android:text="@string/email_register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintRight_toRightOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_12"
+        android:background="@drawable/bg_solid_white_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/size_72"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_icon2"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/view_block0"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <View
+            android:id="@+id/view_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_block1"
+            app:layout_constraintTop_toTopOf="@+id/view_block0" />
+
+        <View
+            android:id="@+id/view_block0"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_40"
+            app:layout_constraintBottom_toTopOf="@+id/et_phone_number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_icon" />
+
+        <View
+            android:id="@+id/view_bg1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@drawable/bg_solid_464d6f_4"
+            app:layout_constraintBottom_toBottomOf="@+id/et_phone_number"
+            app:layout_constraintTop_toTopOf="@+id/et_phone_number" />
+
+        <TextView
+            android:id="@+id/tv_area_code"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:drawableRight="@drawable/ic_arrow_down_light1"
+            android:drawablePadding="@dimen/size_8"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_12"
+            android:paddingRight="@dimen/size_4"
+            android:text="@string/default_area_code"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintBottom_toBottomOf="@+id/et_phone_number"
+            app:layout_constraintLeft_toLeftOf="@+id/view_bg1"
+            app:layout_constraintRight_toLeftOf="@+id/view_divider"
+            app:layout_constraintTop_toTopOf="@+id/et_phone_number" />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="@dimen/size_1"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/size_8"
+            android:background="@color/text_color_hint"
+            app:layout_constraintBottom_toBottomOf="@+id/et_phone_number"
+            app:layout_constraintLeft_toRightOf="@+id/tv_area_code"
+            app:layout_constraintRight_toLeftOf="@+id/et_phone_number"
+            app:layout_constraintTop_toTopOf="@+id/et_phone_number" />
+
+        <EditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:digits="@string/et_type_number"
+            android:gravity="center_vertical"
+            android:hint="@string/input_phone_number"
+            android:inputType="phone"
+            android:padding="@dimen/size_12"
+            android:singleLine="true"
+            android:textColor="@color/light_black1"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintBottom_toTopOf="@+id/et_verification_code"
+            app:layout_constraintLeft_toRightOf="@+id/view_divider"
+            app:layout_constraintRight_toRightOf="@+id/view_bg1"
+            app:layout_constraintTop_toBottomOf="@+id/view_block0" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/input_email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/size_12"
+            android:singleLine="true"
+            android:textColor="@color/text_color_1"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="@dimen/font_14"
+            android:visibility="gone"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_phone_number"
+            app:layout_constraintLeft_toLeftOf="@+id/view_bg1"
+            app:layout_constraintRight_toRightOf="@+id/view_bg1" />
+
+        <View
+            android:id="@+id/view_bg2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@drawable/bg_solid_464d6f_4"
+            app:layout_constraintBottom_toBottomOf="@+id/et_verification_code"
+            app:layout_constraintTop_toTopOf="@+id/et_verification_code" />
+
+        <EditText
+            android:id="@+id/et_verification_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:background="@null"
+            android:digits="@string/et_type_number"
+            android:gravity="center_vertical"
+            android:hint="@string/input_verification_code"
+            android:inputType="numberSigned"
+            android:maxLength="6"
+            android:padding="@dimen/size_12"
+            android:singleLine="true"
+            android:textColor="@color/light_black1"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintBottom_toTopOf="@+id/et_password"
+            app:layout_constraintLeft_toLeftOf="@+id/view_bg2"
+            app:layout_constraintRight_toLeftOf="@+id/btn_send"
+            app:layout_constraintTop_toBottomOf="@+id/et_phone_number" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_12"
+            android:paddingLeft="@dimen/size_8"
+            android:paddingTop="@dimen/size_4"
+            android:paddingRight="@dimen/size_8"
+            android:paddingBottom="@dimen/size_4"
+            android:text="@string/send_verification_code"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/font_12"
+            app:layout_constraintBottom_toBottomOf="@+id/et_verification_code"
+            app:layout_constraintLeft_toRightOf="@+id/et_verification_code"
+            app:layout_constraintRight_toRightOf="@+id/view_bg2"
+            app:layout_constraintTop_toTopOf="@+id/et_verification_code"
+            app:qmui_radius="@dimen/size_4" />
+
+        <View
+            android:id="@+id/view_bg3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@drawable/bg_solid_464d6f_4"
+            app:layout_constraintBottom_toBottomOf="@+id/et_password"
+            app:layout_constraintTop_toTopOf="@+id/et_password" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/input_password"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:padding="@dimen/size_12"
+            android:singleLine="true"
+            android:textColor="@color/light_black1"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintBottom_toTopOf="@+id/et_invitation_code"
+            app:layout_constraintLeft_toLeftOf="@+id/view_bg3"
+            app:layout_constraintRight_toRightOf="@+id/view_bg3"
+            app:layout_constraintTop_toBottomOf="@+id/et_verification_code" />
+
+        <View
+            android:id="@+id/view_bg4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@drawable/bg_solid_464d6f_4"
+            app:layout_constraintBottom_toBottomOf="@+id/et_invitation_code"
+            app:layout_constraintTop_toTopOf="@+id/et_invitation_code" />
+
+        <EditText
+            android:id="@+id/et_invitation_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:background="@null"
+            android:digits="@string/et_type_letter_number"
+            android:gravity="center_vertical"
+            android:hint="@string/input_invitation_code"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/size_12"
+            android:singleLine="true"
+            android:textColor="@color/light_black1"
+            android:textColorHint="@color/text_color_hint"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintBottom_toTopOf="@+id/view_block1"
+            app:layout_constraintLeft_toLeftOf="@+id/view_bg4"
+            app:layout_constraintRight_toRightOf="@+id/view_bg4"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+        <View
+            android:id="@+id/view_block1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/size_12"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_invitation_code" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_24"
+            android:layout_marginTop="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_24"
+            android:layout_marginBottom="@dimen/size_20"
+            android:gravity="center"
+            android:paddingTop="@dimen/size_12"
+            android:paddingBottom="@dimen/size_12"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_block1"
+            app:qmui_backgroundColor="@color/s_btn_app_color_1"
+            app:qmui_radius="@dimen/size_4" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/iv_icon1"
+        android:layout_width="@dimen/size_72"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_icon2"
+        app:layout_constraintBottom_toTopOf="@+id/container"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/container" />
+
+    <CheckBox
+        android:id="@+id/cb_read_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_marginTop="@dimen/size_12"
+        android:button="@drawable/sel_round"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_4"
+        android:text="@string/read_agree"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container" />
+
+    <TextView
+        android:id="@+id/tv_user_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_agreement"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cb_read_agree"
+        app:layout_constraintLeft_toRightOf="@+id/cb_read_agree" />
+
+
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

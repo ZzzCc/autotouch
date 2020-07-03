@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EFEFEF"
+    tools:context=".ui.minepool.MinePoolActivity">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/icon_ore_bg"
+        app:layout_constraintDimensionRatio="1125:761"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/include_top_bar" />
+
+    <ImageView
+        android:id="@+id/img_field"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/size_8"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_field"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_bg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_4"
+        android:paddingTop="@dimen/size_16"
+        android:paddingBottom="@dimen/size_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <View
+            android:id="@+id/view_bg"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/size_4"
+            android:layout_marginBottom="@dimen/size_4"
+            android:background="@color/color_EFEFEF"
+            app:layout_constraintBottom_toBottomOf="@+id/view_bg1"
+            app:layout_constraintLeft_toLeftOf="@+id/view_bg1"
+            app:layout_constraintRight_toRightOf="@+id/view_bg1"
+            app:layout_constraintTop_toTopOf="@+id/view_bg1" />
+
+        <TextView
+            android:id="@+id/tv_fliecoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fliecoin_total_output"
+            android:textColor="@color/light_black1"
+            app:layout_constraintLeft_toLeftOf="@+id/view_bg1"
+            app:layout_constraintRight_toLeftOf="@+id/view_bg"
+            app:layout_constraintTop_toTopOf="@+id/view_bg1" />
+
+        <TextView
+            android:id="@+id/tv_gtse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fliecoin_day_output"
+            android:textColor="@color/light_black1"
+            app:layout_constraintLeft_toRightOf="@+id/view_bg"
+            app:layout_constraintRight_toRightOf="@+id/view_bg1"
+            app:layout_constraintTop_toTopOf="@+id/view_bg1" />
+
+        <TextView
+            android:id="@+id/tv_fliecoin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:text="0.0000"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/font_20"
+            app:layout_constraintLeft_toLeftOf="@+id/view_bg1"
+            app:layout_constraintRight_toLeftOf="@+id/view_bg"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fliecoin" />
+
+        <TextView
+            android:id="@+id/tv_gtse_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:text="0.0000"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/font_20"
+            app:layout_constraintLeft_toRightOf="@+id/view_bg"
+            app:layout_constraintRight_toRightOf="@+id/view_bg1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gtse" />
+
+        <TextView
+            android:id="@+id/tv_fliecoin_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:textColor="@color/light_black3"
+            android:textSize="@dimen/font_12"
+            app:layout_constraintLeft_toLeftOf="@+id/view_bg1"
+            app:layout_constraintRight_toLeftOf="@+id/view_bg"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fliecoin_num"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/tv_gtse_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:textColor="@color/light_black3"
+            android:textSize="@dimen/font_12"
+            app:layout_constraintLeft_toRightOf="@+id/view_bg"
+            app:layout_constraintRight_toRightOf="@+id/view_bg1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gtse_num"
+            tools:text="" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/view_bg2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_bg1" />
+
+    <TextView
+        android:id="@+id/tv_server_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16"
+        android:gravity="center"
+        android:text="@string/server_name"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toLeftOf="@+id/view_bg2"
+        app:layout_constraintRight_toLeftOf="@+id/tv_today_output"
+        app:layout_constraintTop_toTopOf="@+id/view_bg2" />
+
+    <TextView
+        android:id="@+id/tv_today_output"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16"
+        android:gravity="center"
+        android:text="@string/today_output"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@+id/tv_server_name"
+        app:layout_constraintRight_toLeftOf="@+id/tv_state"
+        app:layout_constraintTop_toTopOf="@+id/view_bg2" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16"
+        android:gravity="center"
+        android:text="@string/state"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@+id/tv_today_output"
+        app:layout_constraintRight_toRightOf="@+id/view_bg2"
+        app:layout_constraintTop_toTopOf="@+id/view_bg2" />
+
+    <TextView
+        android:id="@+id/tv_total_output"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16"
+        android:gravity="center"
+        android:text="@string/today_output"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@+id/tv_state"
+        app:layout_constraintRight_toRightOf="@+id/view_bg2"
+        app:layout_constraintTop_toTopOf="@+id/view_bg2" />
+
+    <View
+        android:id="@+id/view_x1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/size_16"
+        android:background="@color/color_EFEFEF"
+        app:layout_constraintLeft_toLeftOf="@+id/view_bg2"
+        app:layout_constraintRight_toRightOf="@+id/view_bg2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_server_name" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        app:layout_constraintBottom_toBottomOf="@+id/view_bg2"
+        app:layout_constraintLeft_toLeftOf="@+id/view_bg2"
+        app:layout_constraintRight_toRightOf="@+id/view_bg2"
+        app:layout_constraintTop_toBottomOf="@+id/view_x1"
+        app:srlAccentColor="@color/colorAccent"
+        app:srlPrimaryColor="@color/colorPrimary">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                android:textColor="@color/light_black3"
+                android:textSize="@dimen/font_14"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

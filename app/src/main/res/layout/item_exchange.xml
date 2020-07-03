@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/size_24"
+    android:paddingTop="@dimen/size_12"
+    android:paddingRight="@dimen/size_12"
+    android:paddingBottom="@dimen/size_12">
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_from_value"
+        app:layout_constraintRight_toRightOf="@+id/tv_from_value"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="USDT" />
+
+    <TextView
+        android:id="@+id/tv_from_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:background="@drawable/bg_gray_stroke_4"
+        android:gravity="center"
+        android:minEms="3"
+        android:paddingLeft="@dimen/size_8"
+        android:paddingTop="@dimen/size_2"
+        android:paddingRight="@dimen/size_8"
+        android:paddingBottom="@dimen/size_2"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_from" />
+
+    <ImageView
+        android:id="@+id/iv_to_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_8"
+        android:src="@drawable/ic_to_right_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_from_value"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_to_value"
+        app:layout_constraintRight_toRightOf="@+id/tv_to_value"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="GTSE" />
+
+    <TextView
+        android:id="@+id/tv_to_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_8"
+        android:layout_marginTop="@dimen/size_12"
+        android:background="@drawable/bg_gray_stroke_4"
+        android:gravity="center"
+        android:minEms="3"
+        android:paddingLeft="@dimen/size_8"
+        android:paddingTop="@dimen/size_2"
+        android:paddingRight="@dimen/size_8"
+        android:paddingBottom="@dimen/size_2"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toRightOf="@+id/iv_to_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_to" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exchange_success"
+        android:textColor="@color/green"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

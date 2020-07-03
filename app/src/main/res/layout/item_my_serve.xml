@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_8"
+    android:background="@color/color_1B2344">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_blue1_solid5">
+
+        <TextView
+            android:id="@+id/tv_my_serve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginTop="@dimen/size_24"
+            android:layout_marginBottom="@dimen/size_24"
+            android:textColor="@color/color_C4CBEF"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            tools:text="服务器001" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_24"
+            android:layout_marginRight="@dimen/size_32"
+            android:layout_marginBottom="@dimen/size_24"
+            android:textColor="@color/green"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/img_arrows"
+            app:layout_constraintTop_toTopOf="parent"
+
+            tools:text="正常" />
+
+        <ImageView
+            android:id="@+id/img_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@mipmap/icon_arrows"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_constraint1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_blue2_solid5"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/view_constraint">
+
+        <TextView
+            android:id="@+id/tv_mac_address"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginTop="@dimen/size_32"
+            android:textColor="@color/color_C4CBEF"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintLeft_toLeftOf="@+id/view_constraint1"
+            app:layout_constraintTop_toTopOf="@+id/view_constraint1"
+
+            tools:text="MAC地址：123546" />
+
+        <TextView
+            android:id="@+id/tv_trusteeship"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_marginBottom="@dimen/size_24"
+            android:textColor="@color/color_C4CBEF"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintLeft_toLeftOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mac_address"
+
+            tools:text="6月托管费： 6GTSE" />
+
+
+        <TextView
+            android:id="@+id/tv_pay_state"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginRight="@dimen/font_30"
+            android:text="未支付"
+            android:textColor="@color/color_9B3F3E"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintRight_toRightOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mac_address" />
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginRight="@dimen/font_30"
+            android:background="@drawable/bg_blue_rectangle4"
+            android:paddingLeft="@dimen/size_24"
+            android:paddingTop="6dp"
+            android:paddingRight="@dimen/size_24"
+            android:paddingBottom="6dp"
+            android:text="支付"
+            android:textColor="@color/color_C4CBEF"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintRight_toRightOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_trusteeship" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/font_16"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pay" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

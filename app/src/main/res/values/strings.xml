@@ -1,0 +1,348 @@
+<resources>
+    <string name="app_name">自动接单工具</string>
+    <string name="app_names">IPFS</string>
+
+    <string name="permission_rationale_message">You have rejected us to apply for authorization, please agree to authorization, otherwise the function can\'t be used normally!</string>
+    <string name="permission_denied_forever_message">We need some of the permissions you rejected or the system failed to apply failed, please manually set to the page authorize, otherwise the function can\'t be used normally!</string>
+    <string name="crash_restart_tip">The application crashes, does it need to be restarted?</string>
+    <string name="scan_qrcode_open_camera_error">Scan QRCode Open Camera Error!</string>
+
+    <string name="no_permission">无权限</string>
+    <string name="http_parse_error">返回报文格式错误</string>
+    <string name="http_network_error">网络连接异常，请检查网络连接</string>
+    <string name="http_ssl_error">证书验证失败</string>
+    <string name="http_unknown_error">未知错误</string>
+    <string name="pulling">上拉加载更多</string>
+    <string name="release">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="finish">加载完成</string>
+    <string name="failed">加载失败</string>
+    <string name="nothing">没有更多数据了</string>
+    <string name="no_data">暂无数据</string>
+    <string name="confirm_alert">确定%1$s吗？</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="buy">购买</string>
+    <string name="double_click_exit">再按一次退出哦</string>
+    <string name="copy">复制</string>
+    <string name="copy_success">复制成功</string>
+    <string name="et_type_number">0123456789</string>
+    <string name="et_type_decimal">0123456789.</string>
+    <string name="et_type_letter_number">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</string>
+
+    <string name="tab_text0">首页</string>
+    <string name="tab_text1">Fil存力</string>
+    <string name="tab_text2">我的资产</string>
+    <string name="tab_text3">个人</string>
+
+    <string name="login">登录</string>
+    <string name="phone_login">手机号登录</string>
+    <string name="email_login">邮箱登录</string>
+    <string name="default_area_code">+86</string>
+    <string name="plus">+%1$s</string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="phone_number_format_error">手机号格式错误</string>
+    <string name="input_email">请输入邮箱</string>
+    <string name="email_format_error">邮箱格式错误</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="verification_code_format_error">验证码格式错误</string>
+    <string name="send_verification_code">发送验证码</string>
+    <string name="send_again">重新发送(%1$d)</string>
+    <string name="input_password">请输入6-18位密码</string>
+
+    <string name="register">注册</string>
+    <string name="immediately_register">还没有账户？<font color="#6CC1EE">立即注册</font></string>
+    <string name="phone_register">手机号注册</string>
+    <string name="email_register">邮箱注册</string>
+    <string name="input_invitation_code">请输入邀请码</string>
+    <string name="read_agree">我已经仔细阅读并同意</string>
+    <string name="user_agreement">《用户协议》</string>
+    <string name="read_agree_user_agreement">请仔细阅读并同意《用户协议》</string>
+
+    <string name="forget_password">忘记密码</string>
+    <string name="confirm_new_password">请确认新密码</string>
+    <string name="password_inconformity">两次输入密码不一致</string>
+    <string name="reset_login_password_seccess">重置登录密码成功</string>
+
+    <string name="area_code">国家/地区</string>
+    <string name="bracket">(%1$s)</string>
+
+    <string name="market">实时行情</string>
+    <string name="currency">币种</string>
+    <string name="price">价格</string>
+    <string name="range">跌涨幅</string>
+    <string name="usd_symbol">$%1$s</string>
+    <string name="cny_symbol">¥%1$s</string>
+    <string name="percent">%1$s％</string>
+    <string name="plus_percent">+%1$s％</string>
+    <string name="subtract_percent">-%1$s％</string>
+
+    <!--矿池-->
+    <string name="fliecoin_total_output">Filecoin总产量</string>
+    <string name="fliecoin_day_output">Filecoin今日产量</string>
+    <string name="server_name">存力码</string>
+    <string name="today_output">今日产量</string>
+    <string name="state">状态</string>
+    <string name="close">关闭</string>
+    <string name="normal">正常</string>
+    <string name="total_output">总产量</string>
+    <string name="binding_xiaomayi">绑定Filecoin存力码</string>
+    <string name="binding_zhichi">当前支持GTSE，FIL敬请期待</string>
+    <string name="team">团队</string>
+
+    <!--我的团队-->
+    <string name="rank_condition">晋级条件</string>
+    <string name="cumulative_gain">累计获得</string>
+    <string name="team_number">我的团队人数</string>
+    <string name="team_performance">我的团队业绩</string>
+    <string name="team_yesterday_award">昨日级差奖励</string>
+    <string name="performance_award">昨日销售奖励</string>
+    <string name="trustee_yesterday_earnings">托管费贡献收益率</string>
+
+    <!--我的-->
+    <string name="mine_order_form">订单</string>
+    <string name="mine_login">创建账号/登录</string>
+    <string name="customer_service">联系客服微信号:</string>
+
+    <string name="scan">扫一扫</string>
+
+    <string name="charge_coin">充币</string>
+    <string name="gtse_collection_address">请将您的USDT（ERC20系列）充到以下地址</string>
+
+    <string name="withdraw_coin">提币</string>
+    <string name="current_balance">您当前的可提余额为：%1$s USDT</string>
+    <string name="withdraw_coin_address">提币地址</string>
+    <string name="binding_wallet_address">请绑定您的钱包地址（USDT）</string>
+    <string name="input_wallet_address">请输入您的钱包地址（USDT）</string>
+    <string name="wallet_address_format_error">钱包地址格式错误</string>
+    <string name="withdraw_coin_amount">提币数量</string>
+    <string name="input_withdraw_coin_amount">请输入您的提币数量</string>
+    <string name="service_charge">手续费：%1$s&#8194;USDT</string>
+    <string name="withdraw_coin_amount_format_error">提币数量格式错误</string>
+    <string name="insufficient_current_balance">当前余额不足</string>
+    <string name="gtse">GTSE</string>
+    <string name="filecoin">Filecoin</string>
+    <string name="add_remark">添加备注</string>
+    <string name="input_remark">请输入备注信息</string>
+    <string name="submit">提交</string>
+    <string name="submit_success">提交成功</string>
+
+    <string name="bind_address">绑定地址</string>
+    <string name="unbind_address">解绑地址</string>
+    <string name="bind_address_alert">请绑定您的USDT(ERC20)钱包地址，该地址将默认作为您的提币地址，请认真核对后绑定</string>
+    <string name="bind_address_alert1">* 该地址将默认作为您的提币地址，请认真核对后绑定</string>
+    <string name="binding">绑定</string>
+    <string name="remove_binding">解除绑定</string>
+    <string name="one_binding">一键绑定</string>
+    <string name="one_binding_context">是否绑定所有未绑定的Filecoin存力码</string>
+    <string name="one_binding_context1">(单次最多绑定100台)</string>
+    <string name="think">我再想想</string>
+    <string name="onfirm">确认</string>
+
+    <string name="notice">公告</string>
+
+    <string name="exchange">兑换</string>
+    <string name="transfer_number">转出数量</string>
+    <string name="receive_number">收到数量</string>
+    <string name="exchange_ratio">兑换比例: %1$s≈%2$s</string>
+    <string name="service_charge1">手续费: %1$s</string>
+    <string name="service_charge2">手续费:</string>
+    <string name="roll_out">转出</string>
+    <string name="into_number">转入数量</string>
+    <string name="exchange_miner_fee">兑换手续费</string>
+    <string name="exchange_success">兑换成功</string>
+    <string name="exchange_currency">兑换币种</string>
+    <string name="exchange_quantity">兑换数量</string>
+    <string name="exchange_time">兑换时间</string>
+
+    <string name="mine_field">社区节点</string>
+    <string name="daily_release">每日释放</string>
+    <string name="revenue_percentage">收益百分比</string>
+    <string name="purchase_alert">*点击购买立即享受团队购买存力销售提成</string>
+    <string name="purchase_now">立即购买</string>
+    <string name="purchase_success">购买成功</string>
+    <string name="purchase_mine_field">购买社区节点</string>
+    <string name="purchase_mine_field_alert">充值%1$sUSDT即可成为社区节点\n社区节点享受%2$s％团队购买存力销售提成</string>
+
+    <string name="collect_coin">收币</string>
+    <string name="app_scan">人人时空存力扫一扫，向我转币</string>
+    <string name="save_image">保存图片</string>
+    <string name="save_success">保存成功</string>
+
+    <string name="collect_transfer_detail">收支明细</string>
+    <string name="plus_gtse">+%1$s</string>
+    <string name="subtract_gtse">-%1$s</string>
+
+    <string name="transfer_coin">转币</string>
+    <string name="opposite_account">对方账户</string>
+    <string name="to_email_account">转至邮箱账户</string>
+    <string name="to_phone_account">转至手机号账户</string>
+    <string name="app_account_phone">人人时空存力账号（手机号）</string>
+    <string name="app_account_email">人人时空存力账号（邮箱）</string>
+    <string name="input_opposite_account">请输入对方账户</string>
+    <string name="next_step">下一步</string>
+    <string name="transfer_coin_alert">*币将实时转入对方账户，无法退回</string>
+    <string name="account">账户：%1$s</string>
+    <string name="select_transfer_currency">请选择转账币种</string>
+    <string name="value">数值</string>
+    <string name="input_transfer_amount">请输入转币数量</string>
+    <string name="transfer_amount_format_error">转币数量格式错误</string>
+    <string name="free_fee">免手续费</string>
+    <string name="transfer_coin_success">转币成功</string>
+
+    <string name="registration_date">REGISTRATION DATE</string>
+    <string name="my_assets">我的资产</string>
+    <string name="usdt1">(USDT)</string>
+    <string name="usdt">USDT</string>
+    <string name="available">可用</string>
+    <string name="freeze">冻结</string>
+    <string name="transaction_record">交易记录</string>
+    <string name="quantity">数量</string>
+    <string name="status">状态</string>
+    <string name="time">时间</string>
+    <string name="success">成功</string>
+    <string name="in_review">审核中</string>
+    <string name="fail">已撤销</string>
+    <string name="reject">已驳回</string>
+
+    <string name="transaction_detail">交易详情</string>
+    <string name="collection_address">收款地址</string>
+    <string name="charge_coin_sum">充币金额</string>
+    <string name="withdraw_coin_sum">提币金额</string>
+    <string name="charge_coin_status">充币状态</string>
+    <string name="withdraw_coin_status">提币状态</string>
+    <string name="gtse1">%1$sGTSE</string>
+    <string name="usdt2">%1$sUSDT</string>
+    <string name="usdt3">%1$s USDT</string>
+    <string name="locker_serve">%1$s 存力</string>
+    <string name="person">%1$s 人</string>
+    <string name="current_status">当前身份:  %1$s</string>
+    <string name="revocation">撤销</string>
+
+    <string name="pay_password">请输入支付密码</string>
+
+    <string name="goods_detail">商品详情</string>
+    <string name="purchase_agreement">风险提示书</string>
+    <string name="purchase_agreement_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </string>
+    <string name="i_agree">我同意</string>
+    <string name="default_host">默认托管</string>
+    <string name="freight_free">免运费</string>
+    <string name="inventory">库存：%1$s</string>
+    <string name="input_inventory_num">请输入库存数量</string>
+    <string name="inventory_no">库存不足</string>
+    <string name="server_detail">存力详情</string>
+    <string name="inventorys">单笔订单最多可购买100存力</string>
+    <string name="max_purchase">单次最大购买数量：100</string>
+
+    <string name="confirm_order">确认订单</string>
+    <string name="select_shipping_address">请选择收货地址</string>
+    <string name="consignee">收货人：%1$s</string>
+    <string name="shipping_address">收货地址：%1$s</string>
+    <string name="multiply">×%1$s</string>
+    <string name="distribution_mode">托管方式</string>
+    <string name="collocation">人人时空官方统一托管</string>
+    <string name="after_sale_service">售后服务</string>
+    <string name="free_warranty">免费保修%1$s个月</string>
+    <string name="leave_message">买家留言：</string>
+    <string name="leave_message_hint">选填，对本次交易的说明</string>
+    <string name="goods_quantity">共%1$s件商品 小计：</string>
+    <string name="total_amount">合计金额：</string>
+    <string name="submit_order">提交订单</string>
+
+    <string name="shipping_address1">收货地址</string>
+    <string name="add_new_address">添加新地址</string>
+    <string name="add_new_address1">添加新地址</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+
+    <string name="edit_address">编辑地址</string>
+    <string name="consignee1">收货人</string>
+    <string name="input_consignee">请输入收货人姓名</string>
+    <string name="phone">联系电话</string>
+    <string name="input_phone">请输入联系电话</string>
+    <string name="deliver_explain">发货说明</string>
+    <string name="deliver_explain_content">人人时空存力官方矿场统一托管</string>
+    <string name="save">保存</string>
+
+    <string name="payment">支付</string>
+    <string name="order_number">订单号</string>
+    <string name="payment_method">付款方式</string>
+    <string name="balance">余额：%1$s（USDT）</string>
+    <string name="total">合计</string>
+    <string name="escrow_agreement">《托管协议》</string>
+    <string name="pay_now">立即支付</string>
+    <string name="payment_alert">*15分钟内未完成支付，订单自动取消</string>
+
+    <string name="my_order">我的订单</string>
+    <string name="order_status0">未支付</string>
+    <string name="order_status1">已取消</string>
+    <string name="order_status2">已完成</string>
+    <string name="order_status3">已完成</string>
+    <string name="not_bound">未绑定</string>
+    <string name="click_payment">点击付款</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="to_bind">去绑定</string>
+    <string name="ant_mac_address">Filecoin存力码</string>
+    <string name="mac_address1">Filecoin存力码：%1$s</string>
+    <string name="order_information">订单信息</string>
+    <string name="order_number1">订单编号：%1$s</string>
+    <string name="create_time">创建时间：%1$s</string>
+    <string name="payment_time">付款时间：%1$s</string>
+    <string name="mac_bind_alert">*Filecoin存力码请自行前往矿池页面进行绑定</string>
+
+    <string name="order_detail">订单详情</string>
+    <string name="locker">1存力=%1$s</string>
+
+    <string name="my_team">我的团队</string>
+
+    <string name="bill">我的账单</string>
+
+    <string name="my_serve">我的服务器</string>
+    <string name="my_serve_rule">每日扣除一定量的托管费，请确保您的账户有足量的GTSE，若未交托管费，您的损失由您自己承担</string>
+
+    <string name="recommend">推荐有奖</string>
+    <string name="Invitation_code">您的邀请码</string>
+    <string name="click_copy">点击复制</string>
+    <string name="scan_qr_code">扫码下载</string>
+
+    <string name="help_center">帮助中心</string>
+
+    <string name="about_us">关于我们</string>
+    <string name="edition">版本</string>
+    <string name="new_version">发现新版本</string>
+    <string name="update">更新</string>
+    <string name="examine_update">检查更新</string>
+
+    <string name="setting_center">设置</string>
+
+    <string name="reset_pay_password">重置支付密码</string>
+    <string name="reset_pay_verify">输入支付密码，完成支付验证</string>
+    <string name="reset_pay_verify1">确认支付密码，完成支付验证</string>
+    <string name="set_pay_password">设置支付密码</string>
+    <string name="setting_pay_password">您还未设置支付密码，请先去设置</string>
+
+    <string name="reset_login_password">重置登录密码</string>
+
+    <string name="exit_login">退出登录</string>
+    <string name="zero">0</string>
+    <string name="exchange_record">兑换记录</string>
+
+    <string name="day">天</string>
+    <string name="hour">时</string>
+    <string name="min">分</string>
+    <string name="sec">秒</string>
+
+    <string name="successful_binding">已成功绑定%1$s台</string>
+    <string name="create_account_login">创建账户/登录</string>
+
+    <string name="order_management">订单管理</string>
+    <string name="bill_management">账单管理</string>
+    <string name="service">客服</string>
+    <string name="purchase">购买</string>
+    <string name="mine_pool">矿池</string>
+
+
+    <string name="accessibility_service_label">自动接单工具</string>
+    <string name="accessibility_service_description">accessibility_service_description</string>
+</resources>

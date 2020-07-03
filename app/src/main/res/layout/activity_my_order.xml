@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".ui.myorder.MyOrderActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+    <com.qmuiteam.qmui.widget.QMUITabSegment
+        android:id="@+id/tab_segment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:background="@color/white"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:qmui_tab_has_indicator="true"
+        app:qmui_tab_indicator_height="@dimen/size_2"
+        app:qmui_tab_mode="fixed"
+        app:qmui_tab_space="@dimen/size_2" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/View_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_segment" />
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

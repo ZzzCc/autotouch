@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size_8"
+    android:layout_marginTop="@dimen/size_4"
+    android:layout_marginRight="@dimen/size_8"
+    android:background="@drawable/bg_solid_white_4">
+
+    <TextView
+        android:id="@+id/tv_currency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="@dimen/size_16"
+        android:text="BTCCC"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@+id/iv_currency"
+        app:layout_constraintRight_toLeftOf="@+id/tv_price_usd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_currency"
+        android:layout_width="@dimen/size_24"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_price_usd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:gravity="center"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toTopOf="@+id/tv_price_cny"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintLeft_toRightOf="@+id/tv_currency"
+        app:layout_constraintRight_toLeftOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_price_cny"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8"
+        android:layout_marginBottom="@dimen/size_12"
+        android:gravity="center"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_price_usd"
+        app:layout_constraintRight_toRightOf="@+id/tv_price_usd"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_usd" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@+id/tv_price_usd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_12"
+        android:paddingTop="@dimen/size_4"
+        android:paddingRight="@dimen/size_12"
+        android:paddingBottom="@dimen/size_4"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toBottomOf="@+id/view1"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@+id/tv_price_usd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+</android.support.constraint.ConstraintLayout>

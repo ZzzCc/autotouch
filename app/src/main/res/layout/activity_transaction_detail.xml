@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_alpha_50"
+    tools:context=".ui.transactiondetail.TransactionDetailActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_solid_white_top_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/size_16"
+        android:paddingBottom="@dimen/size_16"
+        android:text="@string/transaction_detail"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toTopOf="@+id/view_divider2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_12"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_close_black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+    <View
+        android:id="@+id/view_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginBottom="@dimen/size_24"
+        android:background="@color/color_EFEFEF"
+        app:layout_constraintBottom_toTopOf="@+id/tv_collection_address_value" />
+
+    <TextView
+        android:id="@+id/tv_collection_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_24"
+        android:text="@string/collection_address"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_collection_address_value" />
+
+    <TextView
+        android:id="@+id/tv_collection_address_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_24"
+        android:layout_marginBottom="@dimen/size_32"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toTopOf="@+id/view_divider1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_collection_address"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/view_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginLeft="@dimen/size_24"
+        android:layout_marginRight="@dimen/size_24"
+        android:layout_marginBottom="@dimen/size_24"
+        app:layout_constraintBottom_toTopOf="@+id/tv_withdraw_coin_sum_value" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_coin_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_24"
+        android:text="@string/withdraw_coin_sum"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_withdraw_coin_sum_value" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_coin_sum_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_24"
+        android:layout_marginBottom="@dimen/size_32"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toTopOf="@+id/view_divider0"
+        app:layout_constraintLeft_toRightOf="@+id/tv_withdraw_coin_sum"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/view_divider0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginLeft="@dimen/size_24"
+        android:layout_marginRight="@dimen/size_24"
+        android:layout_marginBottom="@dimen/size_24"
+        app:layout_constraintBottom_toTopOf="@+id/tv_withdraw_coin_status_value" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_coin_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_24"
+        android:text="@string/withdraw_coin_status"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_withdraw_coin_status_value" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_coin_status_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_24"
+        android:layout_marginBottom="@dimen/size_64"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBottom_toTopOf="@+id/btn_revocation"
+        app:layout_constraintLeft_toRightOf="@+id/tv_withdraw_coin_status"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_revocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginBottom="@dimen/size_72"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_12"
+        android:paddingBottom="@dimen/size_12"
+        android:text="@string/revocation"
+        android:textColor="@color/color_498FB4"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:qmui_backgroundColor="@color/color_E6F2F8"
+        app:qmui_borderWidth="@dimen/size_1"
+        app:qmui_radius="@dimen/size_4" />
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

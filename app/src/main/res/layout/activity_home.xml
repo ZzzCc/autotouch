@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EFEFEF"
+    tools:context=".ui.home.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/radio_group"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="132dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_top_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radio_group" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_4"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_home0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_32"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/sel_home_tab0"
+            android:drawablePadding="@dimen/size_4"
+            android:ems="4"
+            android:gravity="center"
+            android:text="@string/tab_text0"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/font_12" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_mall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/sel_home_tab1"
+            android:ems="4"
+            android:gravity="center"
+            android:text="@string/tab_text1"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/font_12" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_home2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_32"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/sel_home_tab2"
+            android:drawablePadding="@dimen/size_4"
+            android:ems="4"
+            android:gravity="center"
+            android:text="@string/tab_text2"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/font_12" />
+    </RadioGroup>
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

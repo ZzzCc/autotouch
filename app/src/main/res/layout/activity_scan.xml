@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.scan.ScanActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxing_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:qrcv_animTime="1000"
+        app:qrcv_barCodeTipText=""
+        app:qrcv_barcodeRectHeight="128dp"
+        app:qrcv_borderColor="@color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/colorPrimaryDark"
+        app:qrcv_cornerDisplayType="center"
+        app:qrcv_cornerLength="@dimen/size_24"
+        app:qrcv_cornerSize="@dimen/size_4"
+        app:qrcv_isAutoZoom="true"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="false"
+        app:qrcv_isScanLineReverse="true"
+        app:qrcv_isShowDefaultGridScanLineDrawable="false"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowLocationPoint="true"
+        app:qrcv_isShowTipBackground="true"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="false"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_qrCodeTipText=""
+        app:qrcv_rectWidth="240dp"
+        app:qrcv_scanLineColor="@color/colorPrimaryDark"
+        app:qrcv_scanLineMargin="0dp"
+        app:qrcv_scanLineSize="0.5dp"
+        app:qrcv_tipTextColor="@color/white"
+        app:qrcv_tipTextSize="@dimen/font_12"
+        app:qrcv_toolbarHeight="@dimen/size_80"
+        app:qrcv_verticalBias="-1" />
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

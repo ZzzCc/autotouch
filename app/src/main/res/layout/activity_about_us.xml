@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EFEFEF"
+    tools:context=".ui.aboutus.AboutUsActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+    <ImageView
+        android:id="@+id/img_launcher"
+        android:layout_width="@dimen/size_56"
+        android:layout_height="@dimen/size_56"
+        android:layout_marginTop="@dimen/size_20"
+        android:background="@drawable/ic_icon1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_launcher" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_56"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_40"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_12"
+        android:paddingBottom="@dimen/size_12"
+        android:text="@string/examine_update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintTop_toBottomOf="@+id/tv_code"
+        app:qmui_backgroundColor="@color/app_color"
+        app:qmui_isRadiusAdjustBounds="true"
+        app:qmui_radius="@dimen/size_4" />
+
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EFEFEF"
+    tools:context=".ui.myteam.MyTeamActivity">
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/icon_ore_bg"
+        app:layout_constraintDimensionRatio="1125:905"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/include_top_bar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_72"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_blue_solid5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/size_16"
+            android:background="@drawable/bg_solid_white_4"
+            app:layout_constraintBottom_toTopOf="@+id/tv_new_identity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_24"
+            android:layout_marginTop="@dimen/size_12"
+            android:text="@string/cumulative_gain"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_divider0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:layout_marginTop="@dimen/size_12"
+            android:background="@color/color_EFEFEF"
+            app:layout_constraintTop_toBottomOf="@+id/tv_total" />
+
+        <TextView
+            android:id="@+id/tv_gtse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_8"
+            android:gravity="center"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/font_20"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/view_divider1"
+            app:layout_constraintTop_toBottomOf="@+id/view_divider0"
+            tools:text="0.00" />
+
+        <TextView
+            android:id="@+id/tv_gtse_str"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginTop="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_8"
+            android:gravity="center"
+            android:text="@string/filecoin"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/view_divider1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gtse" />
+
+        <View
+            android:id="@+id/view_divider1"
+            android:layout_width="@dimen/size_1"
+            android:layout_height="0dp"
+            android:background="@color/color_EFEFEF"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gtse_str"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_gtse" />
+
+        <TextView
+            android:id="@+id/tv_usdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_8"
+            android:gravity="center"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/font_20"
+            app:layout_constraintLeft_toRightOf="@+id/view_divider1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_divider0"
+            tools:text="0.00" />
+
+        <TextView
+            android:id="@+id/tv_usdt_str"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginTop="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_8"
+            android:gravity="center"
+            android:text="@string/usdt"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintLeft_toRightOf="@+id/view_divider1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_usdt" />
+
+        <TextView
+            android:id="@+id/tv_new_identity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_32"
+            android:layout_marginBottom="@dimen/size_16"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gtse_str"
+            tools:text="当前身份：城市节点" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_constraint1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_4"
+        android:padding="@dimen/size_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_constraint">
+
+        <TextView
+            android:id="@+id/tv_team_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:text="@string/team_number"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintLeft_toLeftOf="@+id/view_constraint1"
+            app:layout_constraintTop_toTopOf="@+id/view_constraint1" />
+
+        <TextView
+            android:id="@+id/tv_team_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_16"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintRight_toRightOf="@+id/view_constraint1"
+            app:layout_constraintTop_toTopOf="@+id/view_constraint1"
+            tools:text="0人" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/size_12"
+            android:background="@color/color_EFEFEF"
+            app:layout_constraintTop_toBottomOf="@+id/tv_team_num1" />
+
+        <TextView
+            android:id="@+id/tv_team_performance1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_12"
+            android:text="@string/team_performance"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintLeft_toLeftOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/view_1" />
+
+        <TextView
+            android:id="@+id/tv_team_performance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_16"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintRight_toRightOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/view_1"
+            tools:text="0台服务器" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/size_12"
+            android:background="@color/color_EFEFEF"
+            app:layout_constraintTop_toBottomOf="@+id/tv_team_performance1" />
+
+        <TextView
+            android:id="@+id/tv_team_yesterday_award1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_12"
+            android:text="@string/team_yesterday_award"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/font_16"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/view_2" />
+
+        <TextView
+            android:id="@+id/tv_team_yesterday_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/size_16"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintRight_toRightOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/view_2"
+            tools:text="0.00GTSE" />
+
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/size_12"
+            android:visibility="gone"
+            android:background="@color/color_EFEFEF"
+            app:layout_constraintTop_toBottomOf="@+id/tv_team_yesterday_award1" />
+
+        <TextView
+            android:id="@+id/tv_performance_award1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_12"
+            android:text="@string/performance_award"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintLeft_toLeftOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/view_3" />
+
+        <TextView
+            android:id="@+id/tv_performance_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_16"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintRight_toRightOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/view_3"
+            tools:text="0.00USDT" />
+
+        <View
+            android:id="@+id/view_4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/size_12"
+            android:background="@color/color_EFEFEF"
+            app:layout_constraintTop_toBottomOf="@+id/tv_performance_award1" />
+
+        <TextView
+            android:id="@+id/tv_trustee_yesterday_earnings1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_12"
+            android:text="@string/trustee_yesterday_earnings"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintLeft_toLeftOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/view_4" />
+
+        <TextView
+            android:id="@+id/tv_trustee_yesterday_earnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_16"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintRight_toRightOf="@+id/view_constraint1"
+            app:layout_constraintTop_toBottomOf="@+id/view_4"
+            tools:text="0.00USDT" />
+    </android.support.constraint.ConstraintLayout>
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

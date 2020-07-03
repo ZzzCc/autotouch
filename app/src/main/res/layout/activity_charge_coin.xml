@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    tools:context=".ui.chargecoin.ChargeCoinActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_96"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_top_4"
+        app:layout_constraintBottom_toTopOf="@+id/tv_address"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/size_64"
+        android:layout_height="@dimen/size_64"
+        android:layout_marginTop="@dimen/size_64"
+        android:padding="@dimen/size_8"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_gtse_collection_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_32"
+        android:gravity="center"
+        android:text="@string/gtse_collection_address"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <ImageView
+        android:id="@+id/iv_qr_code"
+        android:layout_width="@dimen/size_180"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_16"
+        app:layout_constraintDimensionRatio="1"
+        android:background="@drawable/bg_solid_464d6f_4"
+        android:padding="@dimen/size_8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gtse_collection_address" />
+
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_96"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_40"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_bottom_4"
+        android:paddingLeft="@dimen/size_16"
+        android:paddingTop="@dimen/size_40"
+        android:paddingRight="@dimen/size_16"
+        android:paddingBottom="@dimen/size_40"
+        app:layout_constraintTop_toBottomOf="@+id/iv_qr_code"
+
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/color_EFEFEF"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        android:gravity="center"
+        android:text="123123123132132132"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_qr_code"
+        app:layout_constraintTop_toTopOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/tv_address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_blue_solid4"
+        android:paddingLeft="@dimen/size_16"
+        android:paddingTop="@dimen/size_8"
+        android:paddingRight="@dimen/size_16"
+        android:paddingBottom="@dimen/size_8"
+        android:text="复制地址"
+        android:textColor="@color/color_498FB4"
+        app:layout_constraintBottom_toBottomOf="@+id/view1"
+        app:layout_constraintLeft_toLeftOf="@+id/view1"
+        app:layout_constraintRight_toRightOf="@+id/view1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

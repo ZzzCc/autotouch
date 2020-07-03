@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".ui.exchange.ExchangeActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_4"
+        app:layout_constraintBottom_toBottomOf="@+id/et_transfer_number"
+        app:layout_constraintTop_toTopOf="@+id/et_transfer_number" />
+
+    <ImageView
+        android:id="@+id/iv_coin_top"
+        android:layout_width="@dimen/size_64"
+        android:layout_height="@dimen/size_64"
+        android:layout_marginLeft="@dimen/size_16"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_usdt_e"
+        app:layout_constraintBottom_toBottomOf="@+id/et_transfer_number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_transfer_number" />
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="@dimen/size_1"
+        android:layout_height="@dimen/size_24"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="@+id/et_transfer_number"
+        app:layout_constraintLeft_toRightOf="@+id/iv_coin_top"
+        app:layout_constraintTop_toTopOf="@+id/et_transfer_number" />
+
+    <TextView
+        android:id="@+id/tv_coin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:gravity="center"
+        android:text="@string/usdt"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBottom_toBottomOf="@+id/et_transfer_number"
+        app:layout_constraintLeft_toRightOf="@+id/divider_top"
+        app:layout_constraintTop_toTopOf="@+id/et_transfer_number" />
+
+    <EditText
+        android:id="@+id/et_transfer_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@null"
+        android:digits="@string/et_type_decimal"
+        android:hint="@string/transfer_number"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/size_24"
+        android:singleLine="true"
+        android:textColor="@color/app_color"
+        android:textColorHint="@color/light_black3"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintLeft_toRightOf="@+id/tv_coin_top"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_4"
+        app:layout_constraintBottom_toBottomOf="@+id/et_receive_number"
+        app:layout_constraintTop_toTopOf="@+id/et_receive_number" />
+
+    <ImageView
+        android:id="@+id/iv_coin_bottom"
+        android:layout_width="@dimen/size_64"
+        android:layout_height="@dimen/size_64"
+        android:layout_marginLeft="@dimen/size_16"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_gtse_e"
+        app:layout_constraintBottom_toBottomOf="@+id/et_receive_number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_receive_number" />
+
+    <View
+        android:id="@+id/divider_bottom"
+        android:layout_width="@dimen/size_1"
+        android:layout_height="@dimen/size_24"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="@+id/et_receive_number"
+        app:layout_constraintLeft_toRightOf="@+id/iv_coin_bottom"
+        app:layout_constraintTop_toTopOf="@+id/et_receive_number" />
+
+    <TextView
+        android:id="@+id/tv_coin_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:gravity="center"
+        android:text="@string/gtse"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBottom_toBottomOf="@+id/et_receive_number"
+        app:layout_constraintLeft_toRightOf="@+id/divider_bottom"
+        app:layout_constraintTop_toTopOf="@+id/et_receive_number" />
+
+    <EditText
+        android:id="@+id/et_receive_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@null"
+        android:digits="@string/et_type_decimal"
+        android:hint="@string/receive_number"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/size_24"
+        android:singleLine="true"
+        android:textColor="@color/app_color"
+        android:textColorHint="@color/light_black3"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintLeft_toRightOf="@+id/tv_coin_bottom"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_transfer_number" />
+
+    <ImageView
+        android:id="@+id/iv_exchange"
+        android:layout_width="@dimen/size_56"
+        android:layout_height="@dimen/size_56"
+        android:layout_marginRight="@dimen/size_24"
+        android:background="@drawable/oval_white"
+        android:elevation="@dimen/size_2"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_exchange_dark"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/et_receive_number"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_transfer_number" />
+
+    <TextView
+        android:id="@+id/tv_exchange_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_16"
+        android:text="@string/exchange_ratio"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_receive_number" />
+
+    <TextView
+        android:id="@+id/tv_service_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_16"
+        android:text="@string/service_charge1"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_exchange_ratio" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:enabled="false"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_16"
+        android:paddingBottom="@dimen/size_16"
+        android:text="@string/exchange"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_service_charge"
+        app:layout_constraintVertical_bias="0.4"
+        app:qmui_backgroundColor="@color/s_btn_app_color_1"
+        app:qmui_radius="@dimen/size_4" />
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

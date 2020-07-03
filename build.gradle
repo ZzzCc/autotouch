@@ -1,0 +1,48 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.2'
+        classpath 'com.chenenyu:img-optimizer:1.1.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    compile_sdk_version = 28
+    build_tools_version = '28.0.3'
+    min_sdk_version = 21
+    target_sdk_version = 28
+
+    version_code = 2002
+    version_name = '2.0.02'
+
+    support_version = '28.0.0'
+    utilcode_version = '1.25.2'
+    proguard_version = '0.0.10'
+    qmui_version = '1.4.0'
+    slidableactivity_version = '2.0.6'
+    butterknife_version = '9.0.0'
+    retrofit_version = '2.6.0'
+    okhttp_version = '4.0.0'
+    rxandroid_version = '1.2.1'
+    gson_version = '2.8.5'
+    glide_version = '4.9.0'
+    transformations_version = '4.0.1'
+    eventbus_version = '3.1.1'
+}

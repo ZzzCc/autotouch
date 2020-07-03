@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_alpha_25"
+    tools:context=".ui.version.VersionUpdateActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_32"
+        android:background="@drawable/bg_solid_white_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_update"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginTop="@dimen/size_24"
+            android:background="@drawable/bg_update1"
+            android:padding="@dimen/size_4"
+            android:text="@string/new_version"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/font_18"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_32"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="@dimen/divider"
+            android:layout_height="0dp"
+            android:background="@color/light_black2"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_cancel" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_24"
+            android:gravity="center"
+            android:padding="@dimen/size_16"
+            android:text="@string/cancel"
+            android:textColor="@color/light_black3"
+            android:textSize="@dimen/font_16"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_confirm"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content"
+            app:qmui_backgroundColor="@color/s_btn_gray"
+            app:qmui_radiusBottomLeft="@dimen/size_4" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_24"
+            android:gravity="center"
+            android:padding="@dimen/size_16"
+            android:text="@string/update"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/font_16"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@+id/btn_cancel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content"
+            app:qmui_backgroundColor="@color/s_btn_gray"
+            app:qmui_radiusBottomRight="@dimen/size_4" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btn_constraint_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_24"
+            android:gravity="center"
+            android:padding="@dimen/size_16"
+            android:text="@string/update"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/font_16"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content"
+            app:qmui_backgroundColor="@color/s_btn_gray"
+            app:qmui_radiusBottomLeft="@dimen/size_4"
+            app:qmui_radiusBottomRight="@dimen/size_4" />
+
+        <TextView
+            android:id="@+id/tv_downloading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_32"
+            android:text="下载中,请稍等..."
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_12"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_8"
+            android:layout_marginLeft="@dimen/size_32"
+            android:layout_marginTop="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_32"
+            android:layout_marginBottom="@dimen/size_24"
+            android:max="100"
+            android:progressDrawable="@drawable/bg_progressbar"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_downloading" />
+    </android.support.constraint.ConstraintLayout>
+
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

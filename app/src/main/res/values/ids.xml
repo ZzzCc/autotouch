@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="msg_update_mine" type="id" />
+    <item name="msg_scan_success" type="id" />
+    <item name="msg_item_click" type="id" />
+    <item name="msg_get_market" type="id" />
+    <item name="msg_get_goods" type="id" />
+    <item name="msg_pic_list_mall" type="id" />
+    <item name="msg_bind_address" type="id" />
+    <item name="msg_input_pay_password" type="id" />
+    <item name="msg_mineral_list" type="id" />
+    <item name="msg_wechat" type="id" />
+    <item name="msg_select_address" type="id" />
+    <item name="msg_delete_address" type="id" />
+    <item name="msg_update_address" type="id" />
+    <item name="msg_get_home_data" type="id" />
+    <item name="msg_to_mine" type="id" />
+    <item name="msg_mac_address" type="id" />
+    <item name="msg_revocation" type="id" />
+    <item name="msg_click_payment" type="id" />
+    <item name="msg_cancel_order" type="id" />
+    <item name="msg_update_order" type="id" />
+    <item name="msg_update" type="id" />
+    <item name="msg_input_pay_password1" type="id" />
+    <item name="msg_one_bind" type="id" />
+    <item name="msg_assets" type="id" />
+    <item name="msg_my_assets" type="id" />
+</resources>

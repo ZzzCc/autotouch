@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context=".ui.exchangerecord.ExchangeDetailActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_4"
+        app:layout_constraintBottom_toBottomOf="@id/tv_exchange_time_value"
+        app:layout_constraintTop_toTopOf="@+id/tv_status" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_24"
+        android:drawableTop="@drawable/ic_success"
+        android:drawablePadding="@dimen/size_16"
+        android:padding="@dimen/size_24"
+        android:text="@string/exchange_success"
+        android:textColor="@color/green"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginLeft="@dimen/size_48"
+        android:layout_marginRight="@dimen/size_48"
+        android:background="@drawable/line_dash_divider"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status" />
+
+    <TextView
+        android:id="@+id/tv_exchange_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_48"
+        android:text="@string/exchange_currency"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_to"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_to"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_from_value"
+        tools:text="USDT" />
+
+    <ImageView
+        android:id="@+id/iv_to_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_8"
+        android:src="@drawable/ic_to_right_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_to"
+        app:layout_constraintRight_toLeftOf="@+id/tv_to_value"
+        app:layout_constraintTop_toTopOf="@+id/tv_to" />
+
+    <TextView
+        android:id="@+id/tv_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_40"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintRight_toRightOf="@+id/tv_to_value"
+        app:layout_constraintTop_toBottomOf="@+id/view_divider"
+        tools:text="GTSE" />
+
+    <TextView
+        android:id="@+id/tv_exchange_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_48"
+        android:text="@string/exchange_quantity"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_to_value"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_from_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_8"
+        android:minEms="3"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_to_value"
+        app:layout_constraintRight_toLeftOf="@+id/iv_to_right1" />
+
+    <ImageView
+        android:id="@+id/iv_to_right1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_8"
+        android:src="@drawable/ic_to_right_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_to_value"
+        app:layout_constraintRight_toLeftOf="@+id/tv_to_value"
+        app:layout_constraintTop_toTopOf="@+id/tv_to_value" />
+
+    <TextView
+        android:id="@+id/tv_to_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_48"
+        android:gravity="right"
+        android:minEms="3"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_to" />
+
+    <TextView
+        android:id="@+id/tv_exchange_miner_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_48"
+        android:text="@string/exchange_miner_fee"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_exchange_miner_fee_value"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_exchange_miner_fee_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_32"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintRight_toRightOf="@+id/tv_to_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_to_value" />
+
+    <TextView
+        android:id="@+id/tv_exchange_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_48"
+        android:text="@string/exchange_time"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_exchange_time_value"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_exchange_time_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_32"
+        android:paddingBottom="@dimen/size_80"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintRight_toRightOf="@+id/tv_exchange_miner_fee_value"
+        app:layout_constraintTop_toBottomOf="@+id/tv_exchange_miner_fee_value" />
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EFEFEF"
+    tools:context=".ui.orderdetail.OrderDetailActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_solid_blue_bottom_4"
+        app:layout_constraintDimensionRatio="375:218"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/include_top_bar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_16"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_24"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_8"
+                android:layout_marginTop="@dimen/size_12"
+                android:layout_marginRight="@dimen/size_8"
+                android:background="@drawable/bg_solid_white_top_4"
+                android:paddingLeft="@dimen/size_16"
+                android:paddingRight="@dimen/size_16"
+                app:layout_constraintTop_toBottomOf="@+id/tv_order_status" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/size_8"
+                android:layout_marginRight="@dimen/size_8"
+                android:background="@drawable/bg_solid_white_bottom_4"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_gtse"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
+
+            <TextView
+                android:id="@+id/tv_goods_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_8"
+                android:gravity="right"
+                android:paddingLeft="@dimen/size_16"
+                android:paddingTop="@dimen/size_16"
+                android:paddingBottom="@dimen/size_16"
+                android:text="@string/goods_quantity"
+                android:textColor="@color/light_black1"
+                android:textSize="@dimen/font_12"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_gtse"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/tv_gtse" />
+
+            <TextView
+                android:id="@+id/tv_gtse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_8"
+                android:paddingTop="@dimen/size_16"
+                android:paddingRight="@dimen/size_16"
+                android:paddingBottom="@dimen/size_16"
+                android:text="@string/gtse1"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_12"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/size_8"
+                android:background="@drawable/bg_solid_white_4"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_alert"
+                app:layout_constraintTop_toTopOf="@+id/tv_order_information" />
+
+            <TextView
+                android:id="@+id/tv_order_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_32"
+                android:layout_marginTop="@dimen/size_4"
+                android:paddingTop="@dimen/size_24"
+                android:text="@string/order_information"
+                android:textColor="@color/light_black1"
+                android:textSize="@dimen/font_16"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_gtse" />
+
+            <TextView
+                android:id="@+id/tv_order_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_32"
+                android:layout_marginTop="@dimen/size_16"
+                android:layout_marginRight="@dimen/size_32"
+                android:text="@string/order_number1"
+                android:textColor="@color/light_black3"
+                android:textSize="@dimen/font_14"
+                app:layout_constraintTop_toBottomOf="@+id/tv_order_information" />
+
+            <TextView
+                android:id="@+id/tv_create_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_32"
+                android:layout_marginTop="@dimen/size_16"
+                android:layout_marginRight="@dimen/size_32"
+                android:text="@string/create_time"
+                android:textColor="@color/light_black3"
+                android:textSize="@dimen/font_14"
+                app:layout_constraintTop_toBottomOf="@+id/tv_order_number" />
+
+            <TextView
+                android:id="@+id/tv_payment_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_32"
+                android:layout_marginTop="@dimen/size_16"
+                android:layout_marginRight="@dimen/size_32"
+                android:text="@string/payment_time"
+                android:textColor="@color/light_black3"
+                android:textSize="@dimen/font_14"
+                app:layout_constraintTop_toBottomOf="@+id/tv_create_time" />
+
+            <TextView
+                android:id="@+id/tv_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_32"
+                android:layout_marginTop="@dimen/size_16"
+                android:layout_marginRight="@dimen/size_32"
+                android:paddingBottom="@dimen/size_56"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_12"
+                app:layout_constraintTop_toBottomOf="@+id/tv_payment_time" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/btn_cancel_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12"
+                android:layout_marginRight="@dimen/size_16"
+                android:paddingLeft="@dimen/size_12"
+                android:paddingTop="@dimen/size_4"
+                android:paddingRight="@dimen/size_12"
+                android:paddingBottom="@dimen/size_4"
+                android:text="@string/cancel_order"
+                android:textColor="@color/color_a6a6a6"
+                android:textSize="@dimen/font_12"
+                android:visibility="gone"
+                app:layout_constraintBaseline_toBaselineOf="@+id/btn_click_payment"
+                app:layout_constraintRight_toLeftOf="@+id/btn_click_payment"
+                app:qmui_borderColor="@color/color_a6a6a6"
+                app:qmui_borderWidth="@dimen/size_1"
+                app:qmui_radius="@dimen/size_4" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/btn_click_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_24"
+                android:layout_marginBottom="@dimen/size_16"
+                android:paddingLeft="@dimen/size_12"
+                android:paddingTop="@dimen/size_4"
+                android:paddingRight="@dimen/size_12"
+                android:paddingBottom="@dimen/size_4"
+                android:text="@string/click_payment"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/font_12"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_alert"
+                app:layout_constraintRight_toRightOf="parent"
+                app:qmui_borderColor="@color/app_color"
+                app:qmui_borderWidth="@dimen/size_1"
+                app:qmui_radius="@dimen/size_4" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/btn_to_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12"
+                android:layout_marginRight="@dimen/size_24"
+                android:layout_marginBottom="@dimen/size_16"
+                android:paddingLeft="@dimen/size_12"
+                android:paddingTop="@dimen/size_4"
+                android:paddingRight="@dimen/size_12"
+                android:paddingBottom="@dimen/size_4"
+                android:text="@string/to_bind"
+                android:textColor="@color/color_BEBEBE"
+                android:textSize="@dimen/font_12"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_alert"
+                app:layout_constraintRight_toLeftOf="@+id/btn_noe_bind"
+                app:qmui_borderColor="@color/color_BEBEBE"
+                app:qmui_borderWidth="@dimen/size_1"
+                app:qmui_radius="@dimen/size_4" />
+
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                android:id="@+id/btn_noe_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12"
+                android:layout_marginRight="@dimen/size_24"
+                android:layout_marginBottom="@dimen/size_16"
+                android:paddingLeft="@dimen/size_12"
+                android:paddingTop="@dimen/size_4"
+                android:paddingRight="@dimen/size_12"
+                android:paddingBottom="@dimen/size_4"
+                android:text="@string/one_binding"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/font_12"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_alert"
+                app:layout_constraintRight_toRightOf="parent"
+                app:qmui_borderColor="@color/app_color"
+                app:qmui_borderWidth="@dimen/size_1"
+                app:qmui_radius="@dimen/size_4" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.wang.hongbaotest"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:5:5-30:19
+12        android:name="com.wang.hongbaotest.MyApp"
+12-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:6:9-30
+13        android:allowBackup="true"
+13-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:7:9-35
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:8:9-43
+16        android:label="@string/app_name"
+16-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:9:9-41
+17        android:supportsRtl="true"
+17-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:10:9-35
+18        android:testOnly="true" >
+19        <activity android:name="com.wang.hongbaotest.MainActivity" >
+19-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:11:9-17:20
+19-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:11:19-47
+20            <intent-filter>
+20-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:12:13-16:29
+21                <action android:name="android.intent.action.MAIN" />
+21-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:13:17-68
+21-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:13:25-66
+22
+23                <category android:name="android.intent.category.LAUNCHER" />
+23-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:15:17-76
+23-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:15:27-74
+24            </intent-filter>
+25        </activity>
+26
+27        <service
+27-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:18:9-29:19
+28            android:name="com.wang.hongbaotest.HongBaoService"
+28-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:19:13-43
+29            android:enabled="true"
+29-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:20:13-35
+30            android:exported="true"
+30-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:21:13-36
+31            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+31-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:22:13-79
+32            <intent-filter>
+32-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:23:13-25:29
+33                <action android:name="android.accessibilityservice.AccessibilityService" />
+33-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:24:17-91
+33-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:24:25-89
+34            </intent-filter>
+35
+36            <meta-data
+36-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:26:13-28:55
+37                android:name="android.accessibilityservice"
+37-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:27:17-60
+38                android:resource="@xml/qianghongbao" />
+38-->/Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:28:17-53
+39        </service>
+40    </application>
+41
+42</manifest>

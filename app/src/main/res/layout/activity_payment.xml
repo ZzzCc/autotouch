@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EFEFEF"
+    tools:context=".ui.payment.PaymentActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_4"
+        android:paddingBottom="@dimen/size_16"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_24"
+            android:layout_marginTop="@dimen/size_24"
+            android:text="@string/order_number"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_order_number_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_24"
+            android:gravity="right"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_order_number"
+            app:layout_constraintLeft_toRightOf="@+id/tv_order_number"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <View
+            android:id="@+id/view_divider0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:layout_marginTop="@dimen/size_24"
+            android:background="@color/light_gray"
+            app:layout_constraintTop_toBottomOf="@+id/tv_order_number_value" />
+
+        <TextView
+            android:id="@+id/tv_payment_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_24"
+            android:layout_marginTop="@dimen/size_24"
+            android:text="@string/payment_method"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_divider0" />
+
+        <TextView
+            android:id="@+id/tv_payment_method_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_24"
+            android:gravity="right"
+            android:text="@string/balance"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_payment_method"
+            app:layout_constraintLeft_toRightOf="@+id/tv_payment_method"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_24"
+            android:layout_marginTop="@dimen/size_24"
+            android:text="@string/total"
+            android:textColor="@color/light_black1"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_payment_method" />
+
+        <TextView
+            android:id="@+id/tv_total_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_12"
+            android:layout_marginRight="@dimen/size_24"
+            android:gravity="right"
+            android:text="@string/gtse"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_14"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_total"
+            app:layout_constraintLeft_toRightOf="@+id/tv_total"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <View
+            android:id="@+id/view_divider1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:layout_marginTop="@dimen/size_24"
+            android:visibility="gone"
+            android:background="@color/light_gray"
+            app:layout_constraintTop_toBottomOf="@+id/tv_total_value" />
+
+        <TextView
+            android:id="@+id/tv_escrow_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_24"
+            android:drawableLeft="@drawable/ic_escrow_agreement"
+            android:text="@string/escrow_agreement"
+            android:textColor="@color/color_748fff"
+            android:textSize="@dimen/font_14"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_divider1" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_payment_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginBottom="@dimen/size_12"
+        android:gravity="center"
+        android:text="@string/payment_alert"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pay_now" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_pay_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_12"
+        android:paddingBottom="@dimen/size_12"
+        android:text="@string/pay_now"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_bg"
+        app:qmui_backgroundColor="@color/s_btn_app_color_1"
+        app:qmui_isRadiusAdjustBounds="true"
+        app:qmui_radius="@dimen/size_4" />
+
+
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

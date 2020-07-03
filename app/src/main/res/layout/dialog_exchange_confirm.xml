@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_solid_white_top_4">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_underline"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_16"
+        android:paddingBottom="@dimen/size_16"
+        android:text="@string/exchange"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_12"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_close_black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_roll_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_16"
+        android:background="@drawable/bg_underline"
+        android:padding="@dimen/size_12"
+        android:text="@string/roll_out"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_roll_out_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_24"
+        android:background="@drawable/bg_underline"
+        android:gravity="right"
+        android:paddingTop="@dimen/size_12"
+        android:paddingBottom="@dimen/size_12"
+        android:singleLine="true"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_roll_out"
+        app:layout_constraintLeft_toRightOf="@+id/tv_roll_out"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_into_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_8"
+        android:background="@drawable/bg_underline"
+        android:padding="@dimen/size_12"
+        android:text="@string/into_number"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_roll_out" />
+
+    <TextView
+        android:id="@+id/tv_into_number_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_24"
+        android:background="@drawable/bg_underline"
+        android:gravity="right"
+        android:paddingTop="@dimen/size_12"
+        android:paddingBottom="@dimen/size_12"
+        android:singleLine="true"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_into_number"
+        app:layout_constraintLeft_toRightOf="@+id/tv_into_number"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_exchange_miner_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_8"
+        android:background="@drawable/bg_underline"
+        android:padding="@dimen/size_12"
+        android:text="@string/exchange_miner_fee"
+        android:textColor="@color/light_black3"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_into_number" />
+
+    <TextView
+        android:id="@+id/tv_exchange_miner_fee_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/size_24"
+        android:background="@drawable/bg_underline"
+        android:gravity="right"
+        android:paddingTop="@dimen/size_12"
+        android:paddingBottom="@dimen/size_12"
+        android:singleLine="true"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_exchange_miner_fee"
+        app:layout_constraintLeft_toRightOf="@+id/tv_exchange_miner_fee"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_96"
+        android:layout_marginRight="@dimen/size_24"
+        android:layout_marginBottom="@dimen/size_24"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_16"
+        android:paddingBottom="@dimen/size_16"
+        android:text="@string/confirm"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_exchange_miner_fee"
+        app:qmui_backgroundColor="@color/color_9ce2ff"
+        app:qmui_radius="@dimen/size_4" />
+</android.support.constraint.ConstraintLayout>

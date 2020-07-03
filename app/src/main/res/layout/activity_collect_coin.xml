@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    tools:context=".ui.collectcoin.CollectCoinActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_4"
+        app:layout_constraintBottom_toBottomOf="@+id/view_block"
+        app:layout_constraintTop_toTopOf="@+id/tv_app_scan" />
+
+    <TextView
+        android:id="@+id/tv_app_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16"
+        android:paddingTop="@dimen/size_24"
+        android:text="@string/app_scan"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/iv_qr_code"
+        android:layout_width="@dimen/size_180"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_16"
+        app:layout_constraintDimensionRatio="1"
+        android:background="@drawable/bg_solid_464d6f_4"
+        android:padding="@dimen/size_8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_scan" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_save_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_24"
+        android:drawableLeft="@drawable/ic_save_image"
+        android:drawablePadding="@dimen/size_12"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_12"
+        android:paddingTop="@dimen/size_4"
+        android:paddingRight="@dimen/size_12"
+        android:paddingBottom="@dimen/size_4"
+        android:text="@string/save_image"
+        android:textColor="@color/color_498FB4"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_qr_code"
+        app:qmui_backgroundColor="@color/color_E6F2F8"
+        app:qmui_radius="@dimen/size_4" />
+
+    <View
+        android:id="@+id/view_block"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_20"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save_image" />
+
+    <TextView
+        android:id="@+id/tv_collect_transfer_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginTop="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_4"
+        android:drawableLeft="@drawable/ic_collect_transfer_detail"
+        android:drawableRight="@drawable/ic_arrow_right"
+        android:drawablePadding="@dimen/size_32"
+        android:paddingLeft="@dimen/size_24"
+        android:paddingTop="@dimen/size_16"
+        android:paddingRight="@dimen/size_24"
+        android:paddingBottom="@dimen/size_16"
+        android:text="@string/collect_transfer_detail"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintTop_toBottomOf="@+id/view_block" />
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

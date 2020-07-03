@@ -1,0 +1,109 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:2:1-32:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/e460e191aaf60c946a7d21c035d8e78c/appcompat-v7-27.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/2b9cc2ec204ef4ca9bffff5458865d22/support-fragment-27.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/ab43b8ee85a584743c0258f9f7c742e0/support-core-utils-27.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/67cc6e7e0d642c8f385389ad2018185b/animated-vector-drawable-27.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/8502c0004ccd919a3e614a78d81e0a20/support-vector-drawable-27.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/3833ccb2621c46456c00d45611195a7c/support-core-ui-27.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/85fbe490819c0fdb815e4d88c7de7c40/support-compat-27.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/ea9b56004867701941899b64c400b257/runtime-1.0.3/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:3:11-41
+		INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:2:1-32:12
+		INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:5:5-30:19
+	android:supportsRtl
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:9:9-41
+	android:icon
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:8:9-43
+	android:allowBackup
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:7:9-35
+	android:name
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:6:9-30
+activity#com.wang.hongbaotest.MainActivity
+ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:11:9-17:20
+	android:name
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:11:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:12:13-16:29
+action#android.intent.action.MAIN
+ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:13:17-68
+	android:name
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:13:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:15:17-76
+	android:name
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:15:27-74
+service#com.wang.hongbaotest.HongBaoService
+ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:18:9-29:19
+	android:enabled
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:20:13-35
+	android:exported
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:21:13-36
+	android:permission
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:22:13-79
+	android:name
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:19:13-43
+intent-filter#action:name:android.accessibilityservice.AccessibilityService
+ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:23:13-25:29
+action#android.accessibilityservice.AccessibilityService
+ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:24:17-91
+	android:name
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:24:25-89
+meta-data#android.accessibilityservice
+ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:26:13-28:55
+	android:resource
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:28:17-53
+	android:name
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml:27:17-60
+uses-sdk
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/e460e191aaf60c946a7d21c035d8e78c/appcompat-v7-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/e460e191aaf60c946a7d21c035d8e78c/appcompat-v7-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/2b9cc2ec204ef4ca9bffff5458865d22/support-fragment-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/2b9cc2ec204ef4ca9bffff5458865d22/support-fragment-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/ab43b8ee85a584743c0258f9f7c742e0/support-core-utils-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/ab43b8ee85a584743c0258f9f7c742e0/support-core-utils-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/67cc6e7e0d642c8f385389ad2018185b/animated-vector-drawable-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/67cc6e7e0d642c8f385389ad2018185b/animated-vector-drawable-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/8502c0004ccd919a3e614a78d81e0a20/support-vector-drawable-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/8502c0004ccd919a3e614a78d81e0a20/support-vector-drawable-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/3833ccb2621c46456c00d45611195a7c/support-core-ui-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/3833ccb2621c46456c00d45611195a7c/support-core-ui-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/85fbe490819c0fdb815e4d88c7de7c40/support-compat-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/85fbe490819c0fdb815e4d88c7de7c40/support-compat-27.0.2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/ea9b56004867701941899b64c400b257/runtime-1.0.3/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/zhangcongcong/.gradle/caches/transforms-2/files-2.1/ea9b56004867701941899b64c400b257/runtime-1.0.3/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+		ADDED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml
+		INJECTED from /Users/zhangcongcong/AndroidStudioProjects/autotouch/apptest/src/main/AndroidManifest.xml

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EFEFEF"
+    tools:context=".ui.minefield.MineFieldActivity">
+
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/icon_ore_bg"
+        app:layout_constraintDimensionRatio="1125:761"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/include_top_bar" />
+
+    <View
+        android:id="@+id/view_bg1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_136"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:background="@drawable/bg_solid_white_8"
+        app:layout_constraintTop_toBottomOf="@+id/img_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/img_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/percent"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/font_30"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_revenue_percentage"
+        app:layout_constraintLeft_toLeftOf="@+id/view_bg1"
+        app:layout_constraintRight_toRightOf="@+id/view_bg1"
+        app:layout_constraintTop_toTopOf="@+id/view_bg1" />
+
+
+    <TextView
+        android:id="@+id/tv_revenue_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/revenue_percentage"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBottom_toBottomOf="@+id/view_bg1"
+        app:layout_constraintLeft_toLeftOf="@+id/view_bg1"
+        app:layout_constraintRight_toRightOf="@+id/view_bg1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_percent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_8"
+        android:text="@string/purchase_alert"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintBottom_toTopOf="@+id/btn_purchase_now"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_purchase_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_40"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_12"
+        android:paddingBottom="@dimen/size_12"
+        android:text="@string/purchase_now"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:qmui_backgroundColor="@color/app_color"
+        app:qmui_isRadiusAdjustBounds="true"
+        app:qmui_radius="@dimen/size_4" />
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>

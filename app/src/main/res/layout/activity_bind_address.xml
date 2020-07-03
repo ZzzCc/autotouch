@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hdf.autotouch.widget.WindowInsetConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EFEFEF"
+    tools:context=".ui.bindaddress.BindAddressActivity">
+
+    <include layout="@layout/include_top_bar" />
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_solid_white_4"
+        app:layout_constraintBottom_toBottomOf="@id/view_block"
+        app:layout_constraintTop_toTopOf="@+id/tv_bind_address_alert" />
+
+    <TextView
+        android:id="@+id/tv_bind_address_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_48"
+        android:layout_marginTop="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_48"
+        android:paddingTop="@dimen/size_24"
+        android:text="@string/bind_address_alert"
+        android:textColor="@color/color_7D7D7D"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_withdraw_coin_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_24"
+        android:text="@string/withdraw_coin_address"
+        android:textColor="@color/light_black1"
+        android:textSize="@dimen/font_14"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_bind_address_alert"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bind_address_alert" />
+
+    <ImageView
+        android:id="@+id/iv_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_scan"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_withdraw_coin_address"
+        app:layout_constraintRight_toRightOf="@+id/tv_bind_address_alert"
+        app:layout_constraintTop_toTopOf="@+id/tv_withdraw_coin_address" />
+
+    <EditText
+        android:id="@+id/et_wallet_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_12"
+        android:background="@drawable/bg_solid_464d6f_4"
+        android:hint="@string/input_wallet_address"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/size_12"
+        android:singleLine="true"
+        android:textColor="@color/light_black1"
+        android:textColorHint="@color/text_color_hint"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_bind_address_alert"
+        app:layout_constraintRight_toRightOf="@+id/tv_bind_address_alert"
+        app:layout_constraintTop_toBottomOf="@+id/tv_withdraw_coin_address" />
+
+    <View
+        android:id="@+id/view_block"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_40"
+        app:layout_constraintTop_toBottomOf="@+id/et_wallet_address" />
+
+
+    <TextView
+        android:id="@+id/tv_bind_address_alert1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_20"
+        android:gravity="center"
+        android:text="@string/bind_address_alert1"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_12"
+        app:layout_constraintBottom_toTopOf="@+id/btn_binding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/btn_binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_20"
+        android:gravity="center"
+        android:paddingTop="@dimen/size_12"
+        android:paddingBottom="@dimen/size_12"
+        android:text="@string/bind_address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:qmui_backgroundColor="@color/s_btn_app_color_1"
+        app:qmui_isRadiusAdjustBounds="true"
+        app:qmui_radius="@dimen/size_4" />
+</com.hdf.autotouch.widget.WindowInsetConstraintLayout>
